@@ -5,7 +5,7 @@ Nous avons rechercher différentes idées pour notre projet. J'ai notamment rete
 - Horloge binaire: http://www.instructables.com/id/Arduino-Powered-Binary-Clock/ 
 - Caméra macroscopique: http://www.instructables.com/id/RPi-MacroScope/
 
-Notre choix définitif c'est porté sur le triple sismographe RF qui sera ajouté à l'équipement du Rover R6P4 déjà existant.
+Notre choix définitif s'est porté sur le triple sismographe RF qui sera ajouté à l'équipement du Rover R6P4 déjà existant.
 
 Seance 2 : Mercredi 10 Janvier 2018
 
