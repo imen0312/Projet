@@ -5,7 +5,7 @@ Ce projet est réalisé dans le cadre de la formation de prépa intégrée de Po
 PEIP2 ARDUINO Triple sismographe (Rover)
 
 
-Description : /n
+"Description :"/n
 Ce projet a pour but de réaliser une transmission RF entre les sismographes et le Rover. Chaque sismographe est équipé de RF232, tout comme le Rover. Un programme sera écrit pour que le Rover récupère les données de chaque sismographe individuellement.
 
 Matériel utilisé :
