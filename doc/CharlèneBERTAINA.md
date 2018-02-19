@@ -21,8 +21,8 @@ Chaque géophone sera composé des éléments suivants: un système RF 232, une 
 
 Séance 3 : Mercredi 24 Janvier
 
-Présentation du projet
+Présentation du projet.
 
 Séance 4 : Mercredi 07 Février
 
-Nous avons d'abord testé le piézo avec un programme. En suite, nous avons pu tester les sismomètres définitifs. Cependant, le montage que nous avions réalisé ne permettait pas d'obtenir de bons résultats. En testant les sismographes sur les oscilloscopes, nous avons eu la confirmation que le problème venait du montage.
+Nous avons d'abord testé le piézo avec le programme "Premier" et pu obtenir le sismographe des mouvements détectés. En suite, nous avons tester un des trois géophones définitifs, en observant les secousses mesurées avec le logiciel Serial Port  Plotter. Cependant, le montage que nous avions réalisé ne permettait pas d'obtenir de bons résultats. En testant le géophone sur les oscilloscopes, nous avons eu la confirmation que le problème venait du montage et non du géophone.
