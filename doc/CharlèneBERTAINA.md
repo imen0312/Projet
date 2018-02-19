@@ -1,4 +1,4 @@
-Séance 1 : Jeudi 21 Décembre 2017
+Séance 1 : Jeudi 21 Décembre
 
 Recherche du projet:
 Nous avons rechercher différentes idées pour notre projet. J'ai notamment retenu les idées suivantes:
@@ -7,7 +7,8 @@ Nous avons rechercher différentes idées pour notre projet. J'ai notamment rete
 
 Notre choix définitif s'est porté sur le triple sismographe RF qui sera ajouté à l'équipement du Rover R6P4 déjà existant.
 
-Seance 2 : Mercredi 10 Janvier 2018
+
+Seance 2 : Mercredi 10 Janvier 
 
 Détail des objectifs:
 Nous avons rechercher les différentes parties qui composeraient notre projet. Il sera divisé en deux parties majeures:
@@ -16,3 +17,12 @@ Nous avons rechercher les différentes parties qui composeraient notre projet. I
 
 On intégrera sur le Rover, un système RF 232 relié à une carte Arduino. Trois géophones réaliseront l'enregistrement des données.
 Chaque géophone sera composé des éléments suivants: un système RF 232, une pile, une horloge RTC, une carte Arduino, une carte SD et un géophone.
+
+
+Séance 3 : Mercredi 24 Janvier
+
+Présentation du projet
+
+Séance 4 : Mercredi 07 Février
+
+Nous avons d'abord testé le piézo avec un programme. En suite, nous avons pu tester les sismomètres définitifs. Cependant, le montage que nous avions réalisé ne permettait pas d'obtenir de bons résultats. En testant les sismographes sur les oscilloscopes, nous avons eu la confirmation que le problème venait du montage.
