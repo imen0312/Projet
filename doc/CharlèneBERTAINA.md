@@ -1,3 +1,4 @@
+
 **Séance 1 : Jeudi 21 Décembre**  
 Recherche du projet:  
 Nous avons rechercher différentes idées pour notre projet. J'ai notamment retenu les idées suivantes:
@@ -21,3 +22,9 @@ Présentation du projet.
 
 **Séance 4 : Mercredi 07 Février**  
 Nous avons d'abord testé le piézo avec le programme "Premier" et pu obtenir le sismographe des mouvements détectés. En suite, nous avons tester un des trois géophones définitifs, en observant les secousses mesurées avec le logiciel Serial Port  Plotter. Cependant, le montage que nous avions réalisé ne permettait pas d'obtenir de bons résultats. En testant le géophone sur les oscilloscopes, nous avons eu la confirmation que le problème venait du montage et non du géophone.
+
+**Séance 5 : Lundi 19 Février**
+Nous avons soudé les antennes aux modules RF. Nous avons obtenu les programmes "Mise_a_l_heure" et "Lecture_de_l_heure". J' ai vérifié le bon fonctionnement de ces programmes.
+
+**Séance 6 : Lundi 12 Mars**
+Avec le schéma correct du circuit avec le géophone et un amplificateur, j'ai pu réaliser le bon montage. Ainsi, nous pouvons désormais visualiser un sismogramme correct avec une percision optimale.
