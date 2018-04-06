@@ -1,4 +1,4 @@
-Envoi de données
+//Envoi de données
 
  /**********************************************  
  // Transfert de données d'une carte arduino à une autre  
@@ -18,8 +18,9 @@ Envoi de données
  int led = 13;  
  SoftwareSerial mySerial(10, 11); // RX, TX  
  void setup()   
- { //-- définition du port Série Logiciel  
-  mySerial.begin(57600);   
+ { //-- définition du port Série Logiciel
+  Serial.begin(9600);
+  mySerial.begin(9600);   
   pinMode(led, OUTPUT);  
  }  
  void loop() //-- Toutes les 2 secondes envoi d'un message  
@@ -30,7 +31,8 @@ Envoi de données
   digitalWrite(led, LOW);  
   delay(2000); //-- Attente de 2 secondes avant de recommencer  
  }  
-Réception
+
+//Réception
 
  /**************  
  // Réception de données via le port Série Logiciel :  
@@ -53,7 +55,7 @@ Réception
   while (!Serial) {;} //-- Pour Leonaro nécessaire  
   Serial.println("Attente réception !");  
   //-- Définition et ouverture du port logiciel  
-  mySerial.begin(57600);   
+  mySerial.begin(9600);   
  }  
  //-- Affichage de la communication  
  void loop() {  
@@ -62,4 +64,4 @@ Réception
    {//-- Affichage sur la console des données  
     Serial.write(mySerial.read());}  
  }  
-Remarque : Avant 1.0.x Serial.flush() vidait le buffer entrant, depuis 1.0.x Serial.flush() vide le buffer sortant. Application : pour envoyer via le port Série des données et écouter en même temps si il y a des données en réception :
+// Remarque : Avant 1.0.x Serial.flush() vidait le buffer entrant, depuis 1.0.x Serial.flush() vide le buffer sortant. Application : pour envoyer via le port Série des données et écouter en même temps si il y a des données en réception :
