@@ -1,3 +1,5 @@
+// code pour lire un fichier sur la carte SD
+
 #include <SD.h>
 
 int chipSelect = 4; //chip select pin for the microSD Card Adapter
