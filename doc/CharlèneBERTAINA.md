@@ -36,4 +36,4 @@ Nous avons débuté les recherches pour établir une connection sans fil entre n
 Nous avons continué la recherche pour établir la communication entre les cartes. Finalement, avant la séance 9 nous avons réussit à établir cette connection avec le programme "RF". Ma carte a le rôle de transmetteur ,et celle d'Imen de récepteur.
   
 **Séance 9 : Lundi 09 Avril**  
-Je développe le programme de déclenchement d'enregistrement des données du géophone sur la carte SD. Je me base sur le programme d'Imen: "SDCard".
+Je développe le programme de déclenchement d'enregistrement des données du géophone sur la carte SD. Je me base sur le programme d'Imen: "SDcard_save".
