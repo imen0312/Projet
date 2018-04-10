@@ -28,3 +28,12 @@ Nous avons soudé les antennes aux modules RF. Nous avons obtenu les programmes 
 
 **Séance 6 : Lundi 12 Mars**
 Avec le schéma correct du circuit avec le géophone et un amplificateur, j'ai pu réaliser le bon montage. Ainsi, nous pouvons désormais visualiser un sismogramme correct avec une percision optimale.
+  
+**Séance 7 : Lundi 26 Mars**
+Nous avons débuté les recherches pour établir une connection sans fil entre nos deux cartes Arduino grâce aux modules RF. Nous avons testé différents programmes et circuits sans succés.
+  
+**Séance 8 : Jeudi 05 Avril**
+Nous avons continué la recherche pour établir la communication entre les cartes. Finalement, avant la séance 9 nous avons réussit à établir cette connection avec le programme "RF". Ma carte a le rôle de transmetteur ,et celle d'Imen de récepteur.
+  
+**Séance 9 : Lundi 09 Avril**  
+Je développe le programme de déclenchement d'enregistrement des données du géophone sur la carte SD. Je me base sur le programme d'Imen: "SDCard".
