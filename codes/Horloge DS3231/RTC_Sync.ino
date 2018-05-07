@@ -1,3 +1,4 @@
+// credits to Electriks
 // code à exécuter qu'UNE seule fois pour synchroniser les horloges avec l'heure du PC
 
 #include <RTClib.h>
