@@ -37,3 +37,6 @@ Nous avons continué la recherche pour établir la communication entre les carte
   
 **Séance 9 : Lundi 09 Avril**  
 Je développe le programme de déclenchement d'enregistrement des données du géophone sur la carte SD. Je me base sur le programme d'Imen: "SDcard_save".
+
+**Séance : Lundi 07 Mai**  
+J'ai terminé le programme de déclenchement de l'enregistrement des données sur la carte SD. Les données sont en Volts.
