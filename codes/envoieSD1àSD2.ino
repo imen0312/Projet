@@ -1,7 +1,8 @@
 // test envoi d'un fichier d'une carte SD vers un autre arduino
 // update : OK ça marche!
 // Envoi de données
-// VERSION FINALE NE PAS MODIFIER ICI
+// VERSION FINALE NE PAS MODIFIER ICI (2)
+// toujours vraie (on a changé le delay(200) en delay(50)
 
  /**********************************************  
  // Transfert de données d'une carte arduino à une autre  
@@ -37,7 +38,7 @@
   file = SD.open("FICH3.txt", FILE_READ); // open "fic1.txt" to read data
   delay(10000);
  }  
- void loop() { //-- Toutes les secondes envoi d'un message  
+ void loop() { //-- envoi d'un message une seule fois
   if (mySerial.available() and test==0){
     Serial.println("OK"); // vérifie que la comunnication est établie
     //digitalWrite(led, HIGH); //-- Pendant l'envoi allume la LED
@@ -45,7 +46,7 @@
     mySerial.write("--- Reading start2 ---\r\n");
     char character;
     while((character=file.read()) != -1) { // this while loop reads data stored in 'file.txt" and prints it to serial monitor
-    delay(200);
+    delay(50);
     mySerial.write(character);
     //Serial.setTimeout(1000);
     }
