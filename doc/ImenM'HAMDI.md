@@ -1,19 +1,37 @@
-Séance 1 (Jeudi 21 décembre 2017) :
+Jeudi 21 décembre 2017
 J'ai formé mon groupe avec Charlène Berteina. Nous n'avions pas d'idées concrètes en ce qui concerne le sujet, nous avons donc profité de cette séance pour faire des recherches sur les différents projets Arduino possibles.
 Nous avions retenu 7 projets au départ, puis on a fait le tri pour arriver à 3 idées au final.
 Finalement, nous avons choisi le triple sismographe RF.
 
-Séance 2 (Mercredi 10 janvier 2018) :
+Mercredi 10 janvier 2018
 Nous avons réfléchi sur comment allaient se presenter les trois sismographes et comment récupérer les données détectées. On a donc commencé par faire un schéma des trois sismographes avec le Rover et un récepteur sur le Rover. On a pensé à utiliser le module HC-SR04 pour mesurer la distance entre les émetteurs et le récepteur, pour pouboir "guider" le Rover et le faire arrêter là où sont les émetteurs. Mr Masson est passé nous voir pour nous parler des sismographes et il nous a proposé d'utiliser des géophones pour capter et enregistrer les vibrations détectées. Il nous a aussi dit d'utiliser une horloge RCT que l'on placera sur les 3 géophones pour pouvoir détecter lequel des 3 aura reçu des vibrations en premier et ainsi les distinguer. Pour cela il faudra enlever la différence de temps au temps enregistré pour que les 3 géophones "soient réglés à la même heure". Mr Masson nous a donné une carte SD où l'on stockera toutes les données dessus. Il nous a dit que le sismographe devra avoir une carte arduino et une pile. Pour l'instant nous ne nous soucierons pas du chargement de la pile. Notre objectif maintenant est de réussir à détecter des vibrations en utilisant un piezo (à la place du géophone), d'enregister l'heure excate à laquelle les vibrarions ont commencé, et de sauvegarder tout ça sur la  carte SD.
 
-Séance 3 (Mercredi 17 janvier 2018) :
+Mercredi 17 janvier 2018
 Séances où tous les groupes faisaient leur présentation, nous avons donc rectifié des choses sur notre diapo et nous nous sommes entraînées à l'oral avant notre passage.
 
-Séance 4 (Mardi 6 février 2018) :
+Mardi 6 février 2018
 M.Masson a reçu les 3 géophones nous avons donc pu commencer à les tester. Nous avons utilisé le logiciel Serial Port Plotter pour visualiser les courbes que les vibrations ont créé. Nous avons simplement placé un géophone sur le sol puis nous avons sauté. Les courbes avaient toutes des amplitudes différentes et même des fois plutôt faibles même lorsque l'on sautait fort. Cela est dû à un mauvais branchement que l'on avait fait pour le montage. M.Masson l'a arrangé et nous avons visualiser les courbes sur l'oscilloscope. C'était beaucoup plus clair et précis.
 Nous avons aussi écrit un programme pour visualiser la tension que le piezo mesurait (et il fonctionnait).
 
-Séance ( mai 2018)
+Lundi 19 février
+On a eu nos modules RS232 avec leurs antennes séparément, on les a donc soudé. J'ai fait des recherches consernant la carte SD pour pouvoir l'utiliser pour la 1ère fois. 
+
+Lundi 12 mars
+J'ai touvé un code fonctionnel pour écrire sur un fichier et l'enregistrer sur la carte SD et un autre code pour lire ce fichier. J'ai ensuite voulu tester avec des valeurs fictives enregistrées sur la carte SD manuellement et ces valeurs sont de la forme 'un caractère par ligne', pour essayer de combiner ces valeurs après l'enregistrement, comme ça on pourra faire des graphes avec des valeurs correctes (et non pas avec "2", ".", "0", "4" pour 2.04 par exemple...). Mais ça n'a pas marché.
+
+Lundi 26 mars
+On a commencé à voir en quoi consistait la serial communication entre les deux cartes Arduino. On a trouvé plusieurs programmes et méthodes pour établir une communication mais aucune d'entre elles ne marchaient. On a même essayé de relier les 2 cartes entre elles grâce aux pins RX et TX réservés pour la communication mais aucun résulat produit!
+
+Jeudi 5 avril
+On a continué à essayer d'avoir une communication entre nos 2 mmodules RS_232. On a trouvé le programme renommé (par nous) 'RF_avec_masse' et il fonctionnait! Charlène a pu m'envoyer 'Hello' et j'ai bien lu 'Hello' sur mon serial monitor.
+
+Lundi 9 avril
+Première tentative de synchronisation avec le PC pour que l'horloge RTC 1702 puisse afficher l'heure exacte de mon PC. Ainsi les 3 horloges seront programmées à la même heure exactement et on aura pas de problèmes de décalage horaire. J'ai donc installé les bibliothèques disponibles de l'horloge 1702 mais c'était très compliqué de trouver un code pour la synchroniser. Il n'existe pas de bibliothèque arduino officielle, donc toutes les bibliothèques que j'ai ont été créées par des personnes, il n'y a donc pas toutes les fonctions utiles... J'ai alors cherché comment on pourrait la synchroniser, j'ai essayé plusieurs tutoriels, installé plusieurs fichiers mais rien ne marchait.
+
+Mercredi 2 mai 2018
+J'ai encore essayé de faire marcher la synchronisation de l'horloge RTC 1702 avec les différentes bibiliothèques et différents programmes mais rien ne marchaient. Après plusieurs recherches, j'ai enfin compris que le RTC 1702 ne pouvait pas se synchroniser avec le PC. Nous ne pouvions que régler l'heure manuellement. Il faut donc qu'on prenne un RTC 1302.
+
+Lundi 7 mai 2018
 On a finalement changé notre module RTC 1702 pour un RTC 3231 pour pouvoir synchroniser l'horloge. J'ai pu tester le code qui synchronise l'horloge avec l'heure du PC, il a fonctionné. J'ai aussi écrit le code pour afficher l'heure et la date actuelle.
 Après on a voulu se concentrer sur le problème des 3 géophones, et de comment localiser l'épicentre. On a fait des recherches et on en est venues à la conclusion que cela faisait partie des traitements de données, partie que l'on ne fera pas. On laisse donc tomber les calculs et les codes pour placer les 3 géophones.
 
