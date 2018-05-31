@@ -10,7 +10,7 @@
  // * Et ne pas oublier de relier les masses des 2 cartes (GND)  
  ****************************************/  
  #include <SoftwareSerial.h>   
- SoftwareSerial mySerial(10, 11); // RX, TX  
+ SoftwareSerial mySerial(2, 3); // RX, TX  
  void setup()   
  { //-- définition du port Série Logiciel
   Serial.begin(9600);
