@@ -45,7 +45,16 @@ J'ai terminé le programme de déclenchement de l'enregistrement des données su
 On s'est penchées sur le programme du Rover permettant de communiquer successivement avec les trois géophones. Malheureusement, nous n'avions pas la bonnes méthodes. Cette partie a donc été abandonnées par manque de temps. 
 
 **Séance 12 : semaine du 21 Mai**  
-Nous avons réalisé le programme de transfert de fichier de la carte SD du géophone vers le Rover. De plus, ce dernier affiche les données qu"il reçoit sous forme de graphique.
+Nous avons réalisé le programme de transfert de fichier de la carte SD du géophone vers le Rover.D'abord, on reçoit les données chractere par charactere, donc pour pouvoir utiliser les données on a testé plusieures codes pour reconstituer les nombres. Exemple: On reoit: 
+3  
+.  
+2  
+4  
+On affiche sur le moniteur série du Rover (récepteur):3.24  
+Cela a été possible à l'aide d'un caractère qui est envoyé à la fin de chaque nombre. Ce charactère est reconnu par le récepteur qui sait alors lorsque le nombre est terminé.
+Ainsi, on a pu afficher les données que le Rover reçoit sous forme de graphique.
+  
+Nous avons aussi voulu crée un pogramme pour le Rover qui demande au géophone de lui envoyer ses données. Cependant, le double échange entre les deux Arduinos n'a pas fonctionné. Une cause possible a cela: pour que le RF232 débute sa transmission Imen est obligée de déconnecter puis reconnecter l'alimentation du RF. Il en va de même pour déclencher la demande du Rover vers le géophone. Ce problème empèche l'autonomie du géophone.
   
 **Séance 13 : semainde du 28 Mai**  
-
+On a ressemblé tous les programmes du géohones sur une seule carte Arduino. Pour cela, nous avons fusionné plusieurs programmes: lecteure de l'heure, déclenchement de l'enregistrement du séisme et envoi du fichier précedemment enregistré.
