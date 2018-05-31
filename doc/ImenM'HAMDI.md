@@ -29,7 +29,7 @@ Lundi 9 avril
 Première tentative de synchronisation avec le PC pour que l'horloge RTC 1302 puisse afficher l'heure exacte de mon PC. Ainsi les 3 horloges seront programmées à la même heure exactement et on aura pas de problèmes de décalage horaire. J'ai donc installé les bibliothèques disponibles de l'horloge 1302 mais c'était très compliqué de trouver un code pour la synchroniser. Il n'existe pas de bibliothèque arduino officielle, donc toutes les bibliothèques que j'ai ont été créées par des personnes, il n'y a donc pas toutes les fonctions utiles... J'ai alors cherché comment on pourrait la synchroniser, j'ai essayé plusieurs tutoriels, installé plusieurs fichiers mais rien ne marchait.
 
 Mercredi 2 mai 2018  
-J'ai encore essayé de faire marcher la synchronisation de l'horloge RTC 1302 avec les différentes bibiliothèques et différents programmes mais rien ne marchaient. Après plusieurs recherches, j'ai enfin compris que le RTC 1307 ne pouvait pas se synchroniser avec le PC. Nous ne pouvions que régler l'heure manuellement. Il faut donc qu'on prenne un RTC 1307.
+J'ai encore essayé de faire marcher la synchronisation de l'horloge RTC 1302 avec les différentes bibiliothèques et différents programmes mais rien ne marchaient. Après plusieurs recherches, j'ai enfin compris que le RTC 1302 ne pouvait pas se synchroniser avec le PC. Nous ne pouvions que régler l'heure manuellement. Il faut donc qu'on prenne un RTC 1302.
 
 Lundi 7 mai 2018  
 On a finalement changé notre module RTC 1302 pour un RTC 3231 pour pouvoir synchroniser l'horloge. J'ai pu tester le code qui synchronise l'horloge avec l'heure du PC, il a fonctionné. J'ai aussi écrit le code pour afficher l'heure et la date actuelle.
