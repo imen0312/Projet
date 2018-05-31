@@ -14,6 +14,6 @@ RF232
 une carte SD  
 une pile 9V  
 une horloge RTC 3231  
-3 géophones  
+1 géophone 
 
 (insérer une image de ce que l'on a pour l'instant)  
