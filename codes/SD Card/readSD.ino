@@ -10,7 +10,7 @@ void setup() {
     Serial.println("Could not initialize SD card."); // if return value is false, something went wrong.
   }
 
-  file = SD.open("FICH6.txt", FILE_READ); // open "file.txt" to read data
+  file = SD.open("fich.txt", FILE_READ); // open "file.txt" to read data
 
   if(file) {
     Serial.println("--- Reading start ---");
@@ -25,10 +25,6 @@ void setup() {
   }
 
 
-//  file = SD.open("file.txt", FILE_WRITE); 
-//  file = SD.open("file.txt", FILE_READ);
-//  Serial.println(file.read());
-//  file.close();
 }
 
 void loop() {
