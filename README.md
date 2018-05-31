@@ -16,4 +16,4 @@ une pile 9V
 une horloge RTC 3231  
 1 géophone 
 
-![Image](https://i.imgur.com/Gbry1i6.jpg)
+![Montage projet](https://i.imgur.com/Gbry1i6.jpg)
