@@ -93,7 +93,7 @@ void loop() {
 
   //-- Affichage sur la console des données
   //digitalWrite(led, HIGH);
-  fich = SD.open("FICH6.txt", FILE_WRITE);
+  fich = SD.open("file.txt", FILE_WRITE);
   if (fich) {
     Serial.println("fich open");
     //Serial.setTimeout(2000);
