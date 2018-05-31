@@ -38,5 +38,14 @@ Nous avons continué la recherche pour établir la communication entre les carte
 **Séance 9 : Lundi 09 Avril**  
 Je développe le programme de déclenchement d'enregistrement des données du géophone sur la carte SD. Je me base sur le programme d'Imen: "SDcard_save".
 
-**Séance : Lundi 07 Mai**  
+**Séance 10 : Lundi 07 Mai**  
 J'ai terminé le programme de déclenchement de l'enregistrement des données sur la carte SD. Les données sont en Volts.
+
+**Séance 11 : semaine du 14 Mai**
+On s'est penchées sur le programme du Rover permettant de communiquer successivement avec les trois géophones. Malheureusement, nous n'avions pas la bonnes méthodes. Cette partie a donc été abandonnées par manque de temps. 
+
+**Séance 12 : semaine du 21 Mai**  
+Nous avons réalisé le programme de transfert de fichier de la carte SD du géophone vers le Rover. De plus, ce dernier affiche les données qu"il reçoit sous forme de graphique.
+  
+**Séance 13 : semainde du 28 Mai**  
+
