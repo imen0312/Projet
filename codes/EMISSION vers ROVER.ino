@@ -35,16 +35,16 @@ void setup() {
 void loop(){
   value=analogRead(geophone);
   sensorValue=value*5/1023;
-  fich =SD.open("test11.txt", FILE_WRITE); // open "fich.txt" to write data
+  fich =SD.open("fich.txt", FILE_WRITE); // open "fich.txt" to write data
   if (fich){
     Serial.println("fich open");
     if(sensorValue <=valueMin){
       Serial.println("Valeur minimale atteinte");
       time=millis();
-      //DateTime now = rtc.now();
-      //sprintf(buf1, "%02d:%02d:%02d %02d/%02d/%02d", now.hour(), now.minute(), now.second(), now.day(), now.month(), now.year());
-      //fich.print(F("Date/Time:  "));
-      //fich.println(buf1); //enregistre l'heure actuelle
+      DateTime now = rtc.now();
+      sprintf(buf1, "%02d:%02d:%02d %02d/%02d/%02d", now.hour(), now.minute(), now.second(), now.day(), now.month(), now.year());
+      fich.print(F("Date/Time:  "));
+      fich.println(buf1); //enregistre l'heure actuelle
        
       while((millis()-time)<10000.00){
         fich.print(analogRead(geophone)*(5.0/1023.0)); // write geophone's values to fich
@@ -69,7 +69,7 @@ void loop(){
 }
 void envoyer() {
   
-  fich =SD.open("test11.txt", FILE_WRITE); // open "fich.txt" to write data
+  fich =SD.open("fich.txt", FILE_WRITE); // open "fich.txt" to write data
   delay(1000);
   if (mySerial.available() ){
 
