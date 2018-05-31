@@ -16,9 +16,10 @@
   Serial.begin(9600);
   mySerial.begin(9600);    
  }  
- void loop() { //-- Toutes les 2 secondes envoi d'un message 
- if (mySerial.available())  { 
-  mySerial.write("Hello");  
+ void loop() { 
+  //-- Toutes les 2 secondes envoi d'un message
+  if (mySerial.available())  { 
+   mySerial.write("Hello");  
   }  
   digitalWrite(led, LOW);  
   delay(2000); //-- Attente de 2 secondes avant de recommencer  
