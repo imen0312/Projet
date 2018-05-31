@@ -20,7 +20,7 @@
     Serial.println("Could not initialize SD card."); // if return value is false, something went wrong.
   }
   
-  file = SD.open("file.txt", FILE_READ); // open "file.txt" to read data
+  file = SD.open("fich.txt", FILE_READ); // open "file.txt" to read data
   delay(10000);
  }  
  void loop() { //-- envoi d'un message une seule fois
