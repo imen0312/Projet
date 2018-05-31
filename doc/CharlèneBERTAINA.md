@@ -45,11 +45,13 @@ J'ai terminé le programme de déclenchement de l'enregistrement des données su
 On s'est penchées sur le programme du Rover permettant de communiquer successivement avec les trois géophones. Malheureusement, nous n'avions pas la bonnes méthodes. Cette partie a donc été abandonnées par manque de temps. 
 
 **Séance 12 : semaine du 21 Mai**  
-Nous avons réalisé le programme de transfert de fichier de la carte SD du géophone vers le Rover.D'abord, on reçoit les données chractere par charactere, donc pour pouvoir utiliser les données on a testé plusieures codes pour reconstituer les nombres. Exemple: On reoit: 
+Nous avons réalisé le programme de transfert de fichier de la carte SD du géophone vers le Rover.D'abord, on reçoit les données chractere par charactere, donc pour pouvoir utiliser les données on a testé plusieures codes pour reconstituer les nombres. Exemple: On reçoit:
+  
 3  
 .  
 2  
 4  
+
 On affiche sur le moniteur série du Rover (récepteur):3.24  
 Cela a été possible à l'aide d'un caractère qui est envoyé à la fin de chaque nombre. Ce charactère est reconnu par le récepteur qui sait alors lorsque le nombre est terminé.
 Ainsi, on a pu afficher les données que le Rover reçoit sous forme de graphique.
