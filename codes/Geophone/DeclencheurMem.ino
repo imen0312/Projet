@@ -38,7 +38,7 @@ void loop(){
   value=analogRead(geophone);
   sensorValue=value*5/1023;
   Serial.print(sensorValue);
-  fich =SD.open("fich3.txt", FILE_WRITE); // open "fich.txt" to write data
+  fich =SD.open("fich.txt", FILE_WRITE); // open "fich.txt" to write data
   if (fich){
     Serial.println("fich open");
     if(sensorValue <=valueMin){
@@ -60,31 +60,6 @@ void loop(){
     Serial.print("Could not open fich (writing).");
 
   }
-
-
-//File file= SD.open("FICH.txt", FILE_READ); // open "fich.txt" to read data
-//if(file) {
-//
-//    Serial.println("--- Reading start ---");
-//
-//     char character;
-//
-//     while((character=file.read()) != -1) { // this while loop reads data stored in 'file.txt" and prints it to serial monitor
-//
-//      Serial.print(character);
-//    }
-//
-//    file.close();
-//
-//    Serial.println("--- Reading end ---");
-//
-//  } else {
-//
-//    Serial.println("Could not open file (reading).");
-//
-//  }
-//
-//  delay(5000); // wait for 5000ms
 
 
 }
